@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap');
+
 html {
   scroll-behavior: smooth;
   height: 100%;
@@ -7,7 +9,9 @@ body {
   height: 100%;
   margin: 0;
 }
-
+p{
+  margin: 0;
+}
 .wrapper {
   min-height: 100%;
   display: flex;
@@ -17,30 +21,62 @@ main{
   background: yellow;
   flex: 0.75;
   display: flex;
+  z-index: 0;
 }
 .main-gradient {
   display: flex;
   justify-content: center;
   align-items: flex-end;
   flex: 1;
+  animation: gradient 3s ease;
+  background: rgb(62,67,112);
+  background: linear-gradient(180deg, rgba(62,67,112,1) 0%, rgba(62,67,112,1) 13%, rgba(255,218,124,1) 25%, rgba(250,201,112,1) 34%, rgba(249,198,110,1) 37%, rgba(247,193,106,1) 49%, rgba(250,201,112,1) 63%, rgba(255,218,124,1) 76%, rgba(247,139,96,1) 89%, rgba(244,106,85,1) 94%, rgba(143,74,175,1) 100%);
+  background-size: 450% 450%;
+  
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 0%;
+	}
+	100% {
+		background-position: 0% 100%;
+	}
 }
 .sun {
   border-radius: 50%;
   width: 200px;
   height: 200px;
-  background: orange;
-  margin: -20px;
+  background: orangered;
+  transform: translateY(20px);
+  animation: sun-animate 3s ease;
+}
+@keyframes sun-animate {
+	0% {
+		transform: translateY(20px);
+    background: orangered;
+	}
+	100% {
+		background: orange;
+    transform: translateY(50px);
+	}
 }
 footer {
   background: black;
   flex: 0.25;
   color: white;
+  z-index: 1;
+  font-family: 'Noto Sans KR', sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 .time-description {
 
 }
 .time {
-
+  font-size: 5em;
+  font-weight: 700;
 }
 
 @media screen and (min-width: ) {

@@ -1,6 +1,6 @@
 let sunsetTime;
 let sunriseTime;
-let index = 0;
+let index = 1;
 let list;
 fetch('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=today')
   .then((response) => response.json())
@@ -30,9 +30,15 @@ fetch('https://api.sunrise-sunset.org/json?lat=36.7201600&lng=-4.4203400&date=to
   function switchTimes () {
     if (index === 0) {
       index = 1
+      document.querySelector('.sun').style.animation = "backwards sun-animate-reverse 3s "
+      document.querySelector('.main-gradient').style.animation = "backwards gradient-reverse 3s"
+    
     } else  {
       index = 0
+      document.querySelector('.sun').style.animation = "forwards sun-animate 3s"
+      document.querySelector('.main-gradient').style.animation = "forwards gradient 3s"
     }
+    
     typeToHtml()
   }
   

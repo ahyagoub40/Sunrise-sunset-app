@@ -1,0 +1,48 @@
+html {
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+main{
+  background: yellow;
+  flex: 0.75;
+  display: flex;
+}
+.main-gradient {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex: 1;
+}
+.sun {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  background: orange;
+  margin: -20px;
+}
+footer {
+  background: black;
+  flex: 0.25;
+  color: white;
+}
+.time-description {
+
+}
+.time {
+
+}
+
+@media screen and (min-width: ) {
+
+}

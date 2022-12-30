@@ -79,9 +79,9 @@ main{
 }
 }
 footer {
-  background: black;
+  background: rgb(42, 42, 42);
   flex: 0.25;
-  color: white;
+  color: rgb(220, 220, 220);
   z-index: 1;
   font-family: 'Noto Sans KR', sans-serif;
   display: flex;

@@ -1,31 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="server.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <script src="server.js"></script>
-  <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
- <div class="wrapper">
-   <main>
-    <div class="main-gradient">
-      <div class="sun" onclick="switchTimes()">
-        
-      </div>
+  <body>
+    <div class="wrapper">
+      <main>
+        <div class="main-gradient">
+          <div class="sun" onclick="switchTimes()"></div>
+        </div>
+      </main>
+      <footer class="footer">
+        <p class="time-description"></p>
+        <p id="countdownField"></p>
+        <p class="time"></p>
+      </footer>
     </div>
-   </main>
-   <footer class="footer" >
-    <p class="time-description">
-    </p>
-    <p id="countdownField"></p>
-    <p class="time">
-    </p>
-   </footer>
- </div>
-</body>
-
+  </body>
 </html>

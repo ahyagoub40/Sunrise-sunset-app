@@ -1,0 +1,25 @@
+{
+  "name": "sunrise-sunset-app",
+  "version": "1.0.0",
+  "description": "View the app here:",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mustafa-bhm/Sunrise-sunset-app.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mustafa-bhm/Sunrise-sunset-app/issues"
+  },
+  "homepage": "https://github.com/mustafa-bhm/Sunrise-sunset-app#readme",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.5.0",
+    "dotenv": "^16.0.3"
+  }
+}

@@ -1,5 +1,7 @@
 {
-  "name": "sunrise-sunset-app",
+
+  "name": "sunrise-sunset",
+
   "version": "1.0.0",
   "description": "View the app here:",
   "main": "server.js",
@@ -9,6 +11,7 @@
   },
   "repository": {
     "type": "git",
+
     "url": "git+https://github.com/mustafa-bhm/Sunrise-sunset-app.git"
   },
   "keywords": [],
@@ -22,4 +25,10 @@
     "@supabase/supabase-js": "^2.5.0",
     "dotenv": "^16.0.3"
   }
+
+    "url": "git+https://github.com/ahyagoub40/Sunrise-sunset-app.git"
+  },
+ 
+ 
+
 }
